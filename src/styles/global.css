@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  margin: auto;
+  width: min(650px, 60vw);
+}
+
+.app__form {
+  width: 100%;
+  border: 1px solid blue;
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.app__form__header {
+  font-size: 1.5rem;
+}
+
+.form-group {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.form-group__label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 0.1px;
+}
+
+.form-group__input {
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  border: 1px solid cyan;
+  outline: none;
+}
+
+.form-group__input.error {
+  border: 1px solid red;
+}
+
+.app__form button[type="submit"] {
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  border: 1px solid cyan;
+  outline: none;
+  background-color: black;
+  color: white;
+}
+
+.app__form button:disabled {
+  background: rgb(186, 175, 175);
+  opacity: 0.5;
+}
+.error-message {
+  color: red;
+}
